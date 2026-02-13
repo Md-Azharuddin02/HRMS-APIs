@@ -66,3 +66,67 @@ Unique Constraint:
 ```bash
 git clone https://github.com/YOUR_USERNAME/HRMS-Backend.git
 cd HRMS-Backend
+
+2️⃣ Create Virtual Environment
+python -m venv venv
+source venv/bin/activate  # Mac/Linux
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Setup Environment Variables
+
+Create .env file:
+
+DATABASE_URL=postgresql://username:password@localhost:5432/hrms
+
+5️⃣ Run Server
+uvicorn app.main:app --reload
+
+
+API Docs available at:
+
+https://hrms-api-uwae.onrender.com/docs
+
+🌐 API Endpoints
+Employees
+Method	Endpoint	Description
+POST	/employees/	Create employee
+GET	/employees/	Get all employees
+DELETE	/employees/{id}	Delete employee
+Attendance
+Method	Endpoint	Description
+POST	/attendance/	Mark attendance
+GET	/attendance/{employee_id}	Get employee attendance
+🧠 Design Decisions
+
+Used surrogate primary key (id) for relationships.
+
+Business employee code stored as employee_id (string).
+
+Used SQLAlchemy relationships with cascade delete.
+
+Used UniqueConstraint to prevent duplicate attendance.
+
+Implemented proper HTTP status codes.
+
+🚧 Limitations
+
+No authentication (single admin assumption)
+
+No pagination
+
+No filtering support
+
+📌 Future Improvements
+
+Pagination
+
+Filtering attendance by date
+
+Dashboard statistics
+
+JWT Authentication
+
+Dockerization
+
