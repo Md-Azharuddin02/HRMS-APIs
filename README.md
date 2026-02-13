@@ -265,7 +265,6 @@ uvicorn app.main:app --reload
 <td>
 
 ### Phase 3
-- [ ] Docker support
 - [ ] CI/CD pipeline
 - [ ] Unit tests
 - [ ] API versioning
@@ -296,10 +295,10 @@ Contributions, issues, and feature requests are welcome!
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Md Azharuddin**
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+- GitHub:https://github.com/Md-Azharuddin02
+- LinkedIn: https://www.linkedin.com/in/mdazharuddin02/
 
 ---
 
