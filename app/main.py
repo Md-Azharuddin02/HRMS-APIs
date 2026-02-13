@@ -10,7 +10,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://hrms-app-plum.vercel.app/employees"],
+    allow_origins=["https://hrms-app-plum.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
