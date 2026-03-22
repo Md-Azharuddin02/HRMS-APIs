@@ -20,9 +20,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/health")
-def health():
-    return {"status": "ok"}
 app.include_router(employee_routes.router, prefix="/employees", tags=["Employees"])
 app.include_router(attendance_routes.router, prefix="/attendance", tags=["Attendance"])
 app.add_exception_handler(HTTPException, http_exception_handler)
